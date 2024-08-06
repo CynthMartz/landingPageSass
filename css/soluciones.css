@@ -1,0 +1,141 @@
+.soluciones {
+    background-color: var(--background-blanco);
+    padding-top: 54px;
+    padding-bottom: 97px;
+}
+
+.soluciones__titulo1 {
+    text-align: center;
+}
+
+.soluciones__titulo2{
+    color: var(--fuente-azul);
+     text-align: center;
+     padding-top: 8px;
+}
+
+.soluciones__tarjetas {
+    padding-top: 32px;  
+    
+}
+
+.tarjetas {
+    background-color:var(--background-gris98);
+    min-width: 255px;
+    padding: 32px 20px;
+    border-radius: 8px;
+}
+
+.tarjetas__iconos{
+    width:64px;
+}
+
+.tarjetas__titulo {
+    color: var(--fuente-azul);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 32px 20px 8px 0;
+}
+
+.decoracion{
+    margin: 8px 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--linea-decoracion);
+    border: none;
+}
+
+.tarjetas__texto {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--fuente-azul);
+    line-height: 140%;
+    padding-bottom: 18px;
+}
+
+.tarjetas__enlace {
+    color: var(--fuente-rojo);
+    font-size: 16px;
+    font-weight:bold;
+    width: 100%;
+    align-self: left;
+    margin-top: 18px;
+    
+}
+/*slider*/
+.carrusel {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+}
+
+.puntos {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--background-footer);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.punto.active {
+  background-color:var(--fuente-cyan-azul);
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .soluciones {
+    height: 923x;
+    padding-top: 159px;
+    padding-bottom: 159px;
+    }
+
+    .soluciones__tarjetas {
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center;*/
+        
+    }
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+        background-color:var(--background-gris98);
+        width: 255px;
+        padding: 32px 20px;
+        border-radius: 8px;
+    
+    }
+    .tarjetas__titulo {
+        color: var(--fuente-azul);
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        padding: 32px 87px 0 0;
+}
+    .puntos{
+        display: none;
+    }
+}
+
+/*
+@media screen and (min-width:768px){
+    .tarjetas{
+        max-width: 400px;
+    }
+}*/

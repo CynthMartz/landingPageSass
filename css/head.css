@@ -1,0 +1,41 @@
+.head {
+    background-color:var(--background-gris98);
+    color: var(--fuente-azul);
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.head__navegacion {
+    text-align: center;
+}
+
+.head__enlace {
+    font-size: 16px;
+    font-weight: 600; 
+    display: inline-block;
+    margin: 8px;   
+}
+
+.button__main {
+    background-color: var(--boton-rojo);
+    color: var(--background-blanco);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+}  
+
+@media screen and (min-width: 1440px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+        height: 83px;
+    }
+}

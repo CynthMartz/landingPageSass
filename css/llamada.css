@@ -1,0 +1,133 @@
+.llamada  {
+    display: flex;  
+    text-align: left;
+    background-color:var(--background-celeste);
+    padding-bottom: 20px;
+}
+
+.llamada__container{
+   flex-direction: column;
+}
+
+.llamada__titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--fuente-azul);
+    margin-bottom: 8px;
+}
+
+.llamada__texto {
+    color: var(--fuente-azul);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 8px 0 16px 0;
+}
+
+.llamada__texto_secundario{
+    color: var(--fuente-azul);
+    font-size: 16px;
+    font-weight: bold;
+    padding-top:60px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+ .llamada__imagen{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+ /*Logotipos*/
+.llamada__logotipos {
+  text-align: center;
+  width: fit-content;
+  background-color: var(--background-footer);
+  border-radius: 8px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+
+}
+
+.llamada__logotipos li {
+  display: block;
+  margin-bottom: 20px; /* Agrega un poco de espacio entre las imágenes */
+}
+
+.llamada__logotipos li:last-child {
+  margin-bottom: 0;
+}
+
+.llamada__imagen {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .llamada  {
+        padding-top: 150px;
+    }
+    .llamada__container{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .llamada__imagen{
+        width: 60%;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    .llamada {
+        height: 808px;
+        padding-top: 83px;   
+    }
+
+    .llamada__container{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .llamada__titulo {
+        font-size: 64px;  
+    }
+
+    .llamada__texto {
+         font-size: 20px;
+         margin:8px 59px 16px 0;
+    }
+
+    .llamada__texto_secundario{
+        padding-top: 48px;
+        text-align: left;
+    }
+
+        /*Logotipos*/
+    .llamada__logotipos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: fit-content;
+        justify-content: flex-start;
+        padding: 12px 32px;
+        margin: 0;
+    }
+    .llamada__logotipos li{
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+     .llamada__logotipos li:last-child{
+        margin-right: 0;
+     }
+     .llamada__imagen{
+        margin-top: 43px;
+        margin-bottom: 57px;
+    }
+}

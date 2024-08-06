@@ -1,0 +1,39 @@
+/*Mobile first*/
+.footer {
+    background-color: var(--background-footer); 
+    height: 138px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.parrafo__footer{
+    display: none;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__midia {
+    display: block;
+    width: 32.5px;
+    height: 32.5px;
+    margin-right: 8px;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1440px) {
+    .footer {
+        height: 295px;
+        display: block;
+    }
+    .footer__logo{
+    margin-top: 40px;
+}
+    .parrafo__footer{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+}
